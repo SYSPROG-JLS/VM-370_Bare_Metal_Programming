@@ -16,6 +16,7 @@ BMLIB    MACLIB   D1
 
 Sample Standalone Stopwatch Program that outputs to
 the virtual machine's 3215 console (X'009') 
+(demonstrates use of the INTERVAL TIMER)
 ITIMRCL2 ASSEMBLE D1
 ITIMRCL2 LISTING  D1
 ITIMRCL2 SAIPL    D1
@@ -23,6 +24,8 @@ ITIMRCL2 TEXT     D1
 
 Sample Standalone stopwatch program that outputs to
 a 3270 device (X'0C1') attached to the virtual machine 
+(demonstrates use of the INTERVAL TIMER)
+(demonstrates 3270 stream programming)
 ITIMRCLK ASSEMBLE D1
 ITIMRCLK LISTING  D1
 ITIMRCLK SAIPL    D1
@@ -35,18 +38,23 @@ EXEC to Build Standalone Module and PUNCH to RDR
 SABUILD  EXEC     D1
 
 A Simple Standalone Menu Program
+(demonstrates i/o to the 3215 009 console)
 T3215    ASSEMBLE D1
 T3215    LISTING  D1
 T3215    SAIPL    D1
 T3215    TEXT     D1
 
 A Slightly More Complicated Standalone Menu Program
+(demonstrates i/o to the 3215 009 console)
+(demonstrates displaying PSW and low core data)
 T3215-1  ASSEMBLE D1
 T3215-1  LISTING  D1
 T3215-1  SAIPL    D1
 T3215-1  TEXT     D1
 
 A Sample Standalone Program that Demonstrates Task Switching
+(demonstrates use of the INTERVAL TIMER)
+(demonstrates simple multi-processing)
 TSWTCH   ASSEMBLE D1
 TSWTCH   LISTING  D1
 TSWTCH   SAIPL    D1
