@@ -1,6 +1,8 @@
 What's on the AWS Tape
 
-This is the bootstrap program that you IPL
+This is the bootstrap code that prefixes your 
+Standalone Program. This code contains the initial
+PSW and CCWs required to IPL.
 ABSLOAD  ASSEMBLE D1
 ABSLOAD  IPL      D1
 ABSLOAD  LISTING  D1
