@@ -1,0 +1,65 @@
+What's on the AWS Tape
+
+This is the bootstrap program that you IPL
+ABSLOAD  ASSEMBLE D1
+ABSLOAD  IPL      D1
+ABSLOAD  LISTING  D1
+ABSLOAD  TEXT     D1
+
+A Help file
+BAREMETL HELP     D1
+
+The MACLIB required to assemble my sample programs
+BMLIB    MACLIB   D1
+
+Sample Standalone Stopwatch Program that outputs to
+the virtual machine's 3215 console (X'009') 
+ITIMRCL2 ASSEMBLE D1
+ITIMRCL2 LISTING  D1
+ITIMRCL2 SAIPL    D1
+ITIMRCL2 TEXT     D1
+
+Sample Standalone stopwatch program that outputs to
+a 3270 device (X'0C1') attached to the virtual machine 
+ITIMRCLK ASSEMBLE D1
+ITIMRCLK LISTING  D1
+ITIMRCLK SAIPL    D1
+ITIMRCLK TEXT     D1
+
+EXEC to PUNCH Standalone Module to RDR
+LOADRDR  EXEC     D1
+
+EXEC to Build Standalone Module and PUNCH to RDR
+SABUILD  EXEC     D1
+
+A Simple Standalone Menu Program
+T3215    ASSEMBLE D1
+T3215    LISTING  D1
+T3215    SAIPL    D1
+T3215    TEXT     D1
+
+A Slightly More Complicated Standalone Menu Program
+T3215-1  ASSEMBLE D1
+T3215-1  LISTING  D1
+T3215-1  SAIPL    D1
+T3215-1  TEXT     D1
+
+A Sample Standalone Program that Demonstrates Task Switching
+TSWTCH   ASSEMBLE D1
+TSWTCH   LISTING  D1
+TSWTCH   SAIPL    D1
+TSWTCH   TEXT     D1
+
+The MACROs that comprise BMLIB (replace 'X' with '@')
+XCARD    MACRO    D1
+XCCW     MACRO    D1
+XCSW     MACRO    D1
+XDSCB4   MACRO    D1
+XDUMP    MACRO    D1
+XERR     MACRO    D1
+XLOWCORE MACRO    D1
+XPRINT   MACRO    D1
+XREGS    MACRO    D1
+XRGCK    MACRO    D1
+XTERMR   MACRO    D1
+XTERMW   MACRO    D1
